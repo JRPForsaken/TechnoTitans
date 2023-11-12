@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Sportfest Registration</title>
+    <link rel="stylesheet" href="Styles/style.css">
+    <script src="Scripts/script.js" defer></script>
+</head>
+<body>
+<div class="container">
+    <div class="dark-mode-logo"></div>
+    <h1>E-Sportfest Registration</h1>
+    <form action="#" method="post">
+        <label for="games">Select Game:</label>
+        <select id="games" name="games" required>
+            <option value="none" selected disabled>(none)</option>
+            <option value="a">Mobile Legends Bang Bang</option>
+            <option value="b">Call of Duty Mobile</option>
+            <option value="c">Tekken 7</option>
+        </select>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="facebook">Facebook Name:</label>
+        <input type="text" id="facebook" name="facebook" required>
+
+        <label for="section">Section:</label>
+        <input type="text" id="section" name="section" required>
+
+        <!-- A -->
+        <div class="ml-cod-fields">
+            <!-- Mobile Legends or Call of Duty Mobile -->
+            <label for="teamName">Team Name:</label>
+            <input type="text" id="teamName" name="teamName" required>
+
+            <label for="teamMembers">Team Member's Full Names:</label>
+            <textarea id="teamMembers" name="teamMembers" required></textarea>
+
+            <label for="codMembers">Team Member's In-game names & Roles:</label>
+            <textarea id="codMembers" name="codMembers" required></textarea>
+        </div>
+
+        <!-- B -->
+        <div class="tekken-fields">
+            <!-- Tekken 7 Only -->
+            <label for="participantName">Participant's Full Name:</label>
+            <input type="text" id="participantName" name="participantName">
+
+            <label for="inGameName">In-Game Name:</label>
+            <input type="text" id="inGameName" name="inGameName">
+
+            <label for="characters">Frequently Used Characters or Main (List 3):</label>
+            <input type="text" id="characters" name="characters">
+        </div>
+
+        <label for="file">A photo of your Registration Application Form (RAF):</label>
+        <input type="file" id="file" name="file" accept=".jpg, .jpeg, .png, .pdf, .doc, .docx" multiple required>
+
+        <div class="file-display" id="fileDisplay"></div>
+
+        <button id="submitBtn">Submit</button>
+    </form>
+    <div id="errorMessages" class="error-messages"></div>
+</div>
+<div class="footer-text">Created by MediPix</div>
+<div class="loading-screen">
+    <div class="rgb-loader"></div>
+    <div class="loading-message">Loading...</div>
+</div>
+
+</body>
+</html>
